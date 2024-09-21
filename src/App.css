@@ -11,7 +11,7 @@ body{
 }
 ::-webkit-scrollbar{width: 5px !important;}
 ::-webkit-scrollbar-thumb{background: #0858f7;}
-header{width: 100%; height: 70px;position: fixed; top: 0; left: 0;z-index: 1000; background: rgb(238, 231, 231);}
+header{width: 100%; height: 70px;position: fixed; top: 0; left: 0;z-index: 1000; background: rgb(255,255,255,0.8); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);}
 header .logo{width: 40px;;}
 header .row{margin: 0px !important;}
 header .logo-name{ margin-left: 10px; color:#1a1a1a; font-weight: 700;font-size: 25px; }
@@ -62,7 +62,7 @@ font-size:14px;color: #292929;}
 .main .sidebarWrapper .sidebar ul li:hover{background: #f1f1f1;}
 .main .sidebarWrapper .sidebar ul li .submenu {position: relative; padding-left:40px !important ; padding: 10px; }
 .main .sidebarWrapper .sidebar ul li .submenu li{width:100% ; list-style: none; text-decoration: none;  font-size: 13px; font-weight: 500; transition: all 0.3s ease-in-out;}
-.main .sidebarWrapper .sidebar ul li .submenu::before{content: ""; width: 1px; height: 100%; position: absolute; top: 0; left: 25px;background: rgba(0,0,0,0.1); overflow-y: auto;}
+.main .sidebarWrapper .sidebar ul li .submenu::before{content: ""; width: 2px; height: 100%; position: absolute; top: 0; left: 25px;background: rgba(0,0,0,0.1); overflow-y: auto;}
 
 .main .sidebarWrapper .sidebar ul .submenuWrapper{transition: all 0.3s;}
 .main .sidebarWrapper .sidebar ul .submenuWrapper.colapsed {height: 0px;overflow: hidden; transition: all 0.4s;}
@@ -82,10 +82,44 @@ font-size:14px;color: #292929;}
 .dashboardBoxWrapper .dashboardBox .col1 h4{font-size:16px;font-weight: 500;}
 .dashboardBoxWrapper .dashboardBox .col1 span{font-size: 35px; font-weight: bold; line-height: 40px;}
 .dashboardBoxWrapper .dashboardBox .icon{display: flex; align-items: center;justify-content: center; width:50px; height: 50px; border-radius: 10px; background-image: linear-gradient(to bottom right, rgba(0,0,0,0.0),rgba(0,0,0,0.2));}
+.dashboardBoxWrapper .dashboardBox  .chart{font-size: 60px;color: #fff;opacity: 0.1;position: absolute;bottom: 20px;left: 20px;}
+.dashboardBoxWrapper .dashboardBox  .chart svg{font-size: 110px;color: #000;}
+.dashboardBoxWrapper .dashboardBox .menu-icon{margin-right: 5px;}
+
 
 .dashboardBoxWrapper .dashboardBox .icon svg{font-size: 45px; color: #fff; opacity: 0.4;}
 .justify-content-space-between{display: flex;justify-content: space-between;}
 .dashboardBoxWrapper .dashboardBox .toggleIcon{font-size: 22px;color: rgba(0,0,0,0.5); cursor: pointer;width: 40px !important;height: 40px !important;border-radius: 50% !important;}
 .dashboardBoxWrapper .dashboardBox{text-transform: capitalize; text-align: start;}
 
-.dashboardBoxWrapperRow .box{width: 100%; height: 100%; background: #ccc;}
+.dashboardBoxWrapperRow .box {width: 100%;  height: 100%;background-image: linear-gradient(#215ece,#125be8) ;border-radius: 10px; padding: 20px;}
+.dashboardBoxWrapperRow .box svg{color: #fff !important; font-size: 20px;opacity: 1 !important;}
+.dashboardBoxWrapperRow .box p{font-size: 13px;color: #fff;opacity: 0.7;}
+.card{margin: 15px 0;border-radius: 10px;}
+.card .hd{font-size: 18px;font-weight: bold; color: #403e57;}
+
+.cardFilters .col-md-3 h4{font-size: 14px;font-weight: bold;text-transform: capitalize;color: #403e57;}
+
+.table .thead-dark th{background-color: #1866ee !important;border-color: rgba(255,255,255,0.1) !important;font-size: 13px !important;}
+.table tbody td{font-size: 14px !important;color:#403e57 ;font-weight: 600;}
+.table tbody button{min-width: 32px !important;width: 32px !important;height: 32px !important;margin: 0 3px;}
+table tbody .actions button svg{font-size: 32px !important;}
+.table tbody .actions button.secondary{background: rgba(203,60,231,0.2);}
+.table tbody .actions button.success{background: rgba(26,159,83,0.2);}
+.table tbody .actions button.error{background: rgba(241,17,51,0.2);}
+.table.v-align td{vertical-align: middle !important;}
+.table td span.old{text-decoration: line-through;}
+h1,h2,h3,h4,h5,h6,p{color: #403e57;}
+.table td span.old,.table td span.new{display: block; width: 100%;}
+.table td .info h6{opacity: 0.8;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 0px;font-weight: 600;}
+.table td .info p{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 0px;color: #5e5d72;}
+
+table.v-align td .productBox{width: 270px;}
+/* table.v-align td .productBox .info{width: 100%;} */
+
+.table td .info{width: 75%; flex: 0 0 75%;}
+table td .imgWrapper{width: 25%;flex:0 0 25%;}
+
+.tableFooter{padding-bottom: 20px;}
+.tableFooter .pagination{margin-left: auto;}
+

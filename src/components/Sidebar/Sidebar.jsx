@@ -27,10 +27,6 @@ function Sidebar() {
                 <RxDashboard />{" "}
               </span>
               Dashboard
-              <span className="arrow">
-                {" "}
-                <FaAngleRight />{" "}
-              </span>
             </Button>
           </Link>
         </li>
